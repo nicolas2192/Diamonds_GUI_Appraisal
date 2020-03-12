@@ -13,9 +13,9 @@ import pickle
 
 def train_model():
     # Load data
-    train = pd.read_csv('../../data/raw/diamonds_train.csv')
-    test = pd.read_csv('../../data/raw/diamonds_test.csv')
-    full = pd.read_csv('../../data/raw/diamonds.csv')
+    train = pd.read_csv('data/raw/diamonds_train.csv')
+    test = pd.read_csv('data/raw/diamonds_test.csv')
+    full = pd.read_csv('data/raw/diamonds.csv')
 
     # Identify columns
     NUM_FEATS = ['x', 'y', 'z', 'depth', 'table', 'carat']
@@ -59,7 +59,7 @@ def train_model():
     # y_new_data = pipe.predict(test[ALL_FEATS])
 
     # Saving model into a binary file
-    binary_path = "../../data/model_binary/"
+    binary_path = "data/model_binary/"
     binary_name = "RandomForest.pkl"
     with open(f'{binary_path}{binary_name}', "wb") as f:
         pickle.dump(pipe, f)

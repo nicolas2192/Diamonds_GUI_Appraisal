@@ -26,10 +26,12 @@ pip install -r requirements.txt
 *Note:* Each environment manager has its own installation method. It's strongly recommended to check its documentation.
 
 ## :snake: **Running the GUI**
-This GUI comes with a pre-trained model saved as a binary file. Nevertheless, this GUI can run any other model that was trained using the diamonds data set found in the data folder.
+Before running the GUI for the first time, you must train the model and save it as a binary file. This training is a one time task, once trained the model is loaded from the binary file. Train your model by navigating to where the rep was downloaded and type `python packages/Model/model.py` in your terminal window. Typically, the training process takes about 3 minutes but it is subjected to your system performance (RAM, cores, etc)
+
+This GUI can run any other model that was trained using the diamonds data set found in the data folder.
 
 ### Running GUI using pre-installed model 
-Navigate to where the rep was downloaded and type `python main.py` in your terminal. This will run the main.py script which automatically opens the GUI and loads the pre-installed Random Forest model.
+Navigate to where the rep was downloaded and type `python main.py` in your terminal. This will run the main.py script which automatically opens the GUI and loads the pre-installed Random Forest model trained in the previous step.
 
 ### Running GUI using another model
 Any model trained using the diamonds data set can be used to run the GUI. Custom models should be placed in the following path Diamonds_Appraisal/data/model_binary/my_custom_model.pkl
