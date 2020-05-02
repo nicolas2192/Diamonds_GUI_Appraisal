@@ -100,7 +100,7 @@ Comprised by almost 54.000 registries. Data set features are the following:
 ```
 
 ## :interrobang: Custom models
-Check the Pipeline.ipynb notebook or the model.py script to get a general idea. These two files have all necessary steps to create, test, enhance and save your new modules.
+Take a look at the Pipeline.ipynb notebook or the model.py script to get a general idea. These two files have all necessary steps to create, test, enhance and save your new modules.
 
 ## :love_letter: Contact info
 Doubts? Advice?  Drop me a line! :smirk:
