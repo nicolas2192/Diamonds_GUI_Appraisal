@@ -28,8 +28,8 @@ Before running the GUI for the first time, you must train the model and save it 
 
 This GUI can run any other model that was trained using the diamonds data set found at kaggle.
 
-<img align="left" width="500" height="350" src="images/gui2.png">
-<img align="right" width="500" height="350" src="images/gui1.png">
+<img align="left" width="450" height="300" src="images/gui2.png">
+<img align="right" width="450" height="300" src="images/gui1.png">
 
 ### Running GUI using a pre-installed model 
 Navigate to where the rep was downloaded and type `python main.py` on your terminal. This will run the main.py script which automatically opens the GUI and loads the Random Forest model trained in the previous step.
