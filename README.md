@@ -1,53 +1,52 @@
-# Diamonds_Appraisal
+# Diamonds Appraisal
 
-## :boom: Diamonds's price assessment GUI
+## :boom: Diamond Price Assessment GUI
 
-This project's idea came from a private kaggle competition. The main goal was to create the best machine learning model at predicting diamond's prices. 
+This project's idea came from a private kaggle competition. The main goal was to create the best machine learning model at predicting any diamond's price.
 
-## :computer: **Technology stack**
-Wrote in python 3. Main modules:
+## :computer: Technology stack
+Written in python 3. Main modules:
 
 **Scikit-Learn** -> Model training and prediction, RandomForestRegressor(n_estimators=512, max_depth=16)
 
 **Tkinter** -> Graphical User Interface (GUI)
 
-## :wrench: **Configuration**
-Install python and mandatory modules
+## :wrench: Configuration
 
-You can use the following code if you are using the anaconda distribution.
+Install python 3.7 and mandatory dependencies listed in the requirements file.
+
+If you are using the anaconda distribution. Run the following command to create a new environment named "diamond"
 
 ```
-conda create -n new_env_name_here
-conda activate new_env_name_here
-conda install python=3.7
-pip install -r requirements.txt
+conda env create -f requirements.yml
 ```
 
-*Note:* Each environment manager has its own installation method. It's strongly recommended to check its documentation.
+**Note:** Environment managers differ from one another. It's strongly recommended to check its documentation.
 
-## :snake: **Running the GUI**
+## :snake: Running the GUI
 Before running the GUI for the first time, you must train the model and save it as a binary file. This training is a one time task, once trained the model is loaded from the binary file. Train your model by navigating to where the rep was downloaded and type `python packages/Model/model.py` in your terminal window. Typically, the training process takes about 3 minutes but it is subjected to your system performance (RAM, cores, etc)
 
-This GUI can run any other model that was trained using the diamonds data set found in the data folder.
+This GUI can run any other model that was trained using the diamonds data set found at kaggle.
 
-### Running GUI using pre-installed model 
-Navigate to where the rep was downloaded and type `python main.py` in your terminal. This will run the main.py script which automatically opens the GUI and loads the pre-installed Random Forest model trained in the previous step.
+<img align="left" width="500" height="350" src="images/gui2.png">
+<img align="right" width="500" height="350" src="images/gui1.png">
+
+### Running GUI using a pre-installed model 
+Navigate to where the rep was downloaded and type `python main.py` on your terminal. This will run the main.py script which automatically opens the GUI and loads the Random Forest model trained in the previous step.
 
 ### Running GUI using another model
-Any model trained using the diamonds data set can be used to run the GUI. Custom models should be placed in the following path Diamonds_Appraisal/data/model_binary/my_custom_model.pkl
+Any model trained using the diamonds data set can be used to run the GUI. Custom models should be placed at the following path Diamonds_Appraisal/data/model_binary/my_custom_model.pkl
 
-Once there, go to your terminal and run the following line of code: `python main.py my_custom_model.pkl`
+Run custom models by typing the following line of code on your terminal: `python main.py my_custom_model.pkl`
 
-![](images/gui1.png) ![](images/gui2.png)
+### Predicting prices
+Prices are calculated using all 9 entries at the left part of the window. All entries should be filled out. First 6 entries can only take float or integer values, while the last 3 are drop-down lists. Click on the "Calculate price" button to update the "Predicted Price" label and show the price prediction.
 
-### Predicting diamond's price 
-Prices are calculated using all 9 entries at the left part of the window. All entries should be filled. First 6 entries can only take float or integer values, while the last 3 are drop-down lists.
+## :information_source: Data set info
 
-Once all entries are filled, click on the "Calculate price" button to update the "Predicted Price" label.
-
-## :information_source: **Data set info**
-
-![](images/diamond.jpg)
+<p align="center">
+  <img width="457" height="376" src="images/diamond.jpg">
+</p>
 
 Comprised by almost 54.000 registries. Data set features are the following:
 
@@ -71,7 +70,7 @@ Comprised by almost 54.000 registries. Data set features are the following:
 
 **table** width of top of diamond relative to widest point (min: 43 - max: 95)
 
-## :file_folder: **Folder structure**
+## :file_folder: Folder structure
 ```
 └── Diamonds_Appraisal
     ├── .gitignore
@@ -94,8 +93,8 @@ Comprised by almost 54.000 registries. Data set features are the following:
             └── RandomForest.pkl
 ```
 
-## :interrobang: **Custom models**
-Check the Pipeline.ipynb notebook or the model.py script to get a broad idea. These two files have all necessary steps to create, test, enhance and save your modules.
+## :interrobang: Custom models
+Check the Pipeline.ipynb notebook or the model.py script to get a general idea. These two files have all necessary steps to create, test, enhance and save your new modules.
 
-## :love_letter: **Contact info**
-Any doubt? Advice?  Drop me a line! :smirk:
+## :love_letter: Contact info
+Doubts? Advice?  Drop me a line! :smirk:
