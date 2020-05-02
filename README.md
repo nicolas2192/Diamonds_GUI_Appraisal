@@ -28,11 +28,12 @@ Before running the GUI for the first time, you must train the model and save it 
 
 This GUI can run any other model that was trained using the diamonds data set found at kaggle.
 
-<img align="left" width="450" height="300" src="images/gui2.png">
-<img align="right" width="450" height="300" src="images/gui1.png">
-
 ### Running GUI using a pre-installed model 
 Navigate to where the rep was downloaded and type `python main.py` on your terminal. This will run the main.py script which automatically opens the GUI and loads the Random Forest model trained in the previous step.
+
+<p align="center">
+  <img width="750" height="550" src="images/gui2.png">
+</p>
 
 ### Running GUI using another model
 Any model trained using the diamonds data set can be used to run the GUI. Custom models should be placed at the following path Diamonds_Appraisal/data/model_binary/my_custom_model.pkl
@@ -41,6 +42,10 @@ Run custom models by typing the following line of code on your terminal: `python
 
 ### Predicting prices
 Prices are calculated using all 9 entries at the left part of the window. All entries should be filled out. First 6 entries can only take float or integer values, while the last 3 are drop-down lists. Click on the "Calculate price" button to update the "Predicted Price" label and show the price prediction.
+
+<p align="center">
+  <img width="750" height="550" src="images/gui1.png">
+</p>
 
 ## :information_source: Data set info
 
@@ -75,6 +80,7 @@ Comprised by almost 54.000 registries. Data set features are the following:
 └── Diamonds_Appraisal
     ├── .gitignore
     ├── requirements.txt
+    ├── requirements.yml
     ├── README.md
     ├── main.py
     ├── notebooks
